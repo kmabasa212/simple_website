@@ -73,7 +73,6 @@ section {
   font-weight: bold;
 }
 
-/* Project Styling */
 .project img {
   width: 100%;
   height: auto;
@@ -88,7 +87,6 @@ section {
   margin-bottom: 20px;
 }
 
-/* Contact Section */
 .contact-icons a {
   display: inline-block;
   margin: 10px;
@@ -108,7 +106,6 @@ footer {
   width: 100%;
 }
 
-/* Contact Links */
 #contact p {
   font-size: 18px;
 }
