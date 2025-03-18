@@ -3,7 +3,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: grey;
   color: #333;
 }
 
@@ -28,7 +28,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffd700; /* Gold hover effect */
+  color: #ffd700;
 }
 
 section {
@@ -40,7 +40,6 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Profile Photo */
 .profile-photo {
   width: 150px;
   height: 150px;
@@ -49,7 +48,6 @@ section {
   margin-top: 10px;
 }
 
-/* Skill Section */
 .skills-container {
   display: flex;
   justify-content: center;
