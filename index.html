@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khomsani Nolitha Gasa - Portfolio</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="script.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -14,11 +15,13 @@
     <header>
       <h1>Welcome to My Portfolio</h1>
       <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#education">Education</a>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -30,7 +33,7 @@
           alt="Khomsani Nolitha Gasa"
           class="profile-photo"
         />
-        <h4>Khomisani Nolitha Gasa</h4>
+        <h3>Khomisani Nolitha Gasa</h3>
         <p>
           I am a dedicated and analytical student passionate about Mathematics
           and problem-solving. My love for structured thinking and logic has
@@ -41,44 +44,50 @@
       </section>
 
       <section id="education">
-        <h2>Education/Academic Qualifications</h2>
-
-        <h3>Thoko Thaba High School (2017-2021)</h3>
-
-        <h3>University of the Witwatersrand</h3>
-        <ul>
-          <li>BSc Computer Science (2022-2024)</li>
-          <li>BSc Honours Mathematics (2025 - Ongoing)</li>
-        </ul>
-
-        <h3>Umuzi Academy (2024 - Ongoing)</h3>
+        <h2>Education / Academic Qualifications</h2>
+        <article>
+          <h3>Thoko Thaba High School (2017-2021)</h3>
+        </article>
+        <article>
+          <h3>University of the Witwatersrand</h3>
+          <ul>
+            <li>BSc Computer Science (2022-2024)</li>
+            <li>BSc Honours Mathematics (2025 - Ongoing)</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Umuzi Academy (2024 - Ongoing)</h3>
+        </article>
       </section>
 
       <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-container">
+        <div class="skills-grid">
           <div class="skill">
-            <img src="images/team-icon.png" alt="Communication & teamwork" />
+            <img
+              src="images/team-icon.png"
+              alt="Communication & teamwork icon"
+            />
             <p>Communication & teamwork</p>
           </div>
           <div class="skill">
-            <img src="images/html-icon.png" alt="HTML" />
+            <img src="images/html-icon.png" alt="HTML icon" />
             <p>HTML</p>
           </div>
           <div class="skill">
-            <img src="images/css-icon.png" alt="CSS" />
+            <img src="images/css-icon.png" alt="CSS icon" />
             <p>CSS</p>
           </div>
           <div class="skill">
-            <img src="images/js-icon.png" alt="JavaScript" />
+            <img src="images/js-icon.png" alt="JavaScript icon" />
             <p>JavaScript</p>
           </div>
           <div class="skill">
-            <img src="images/laTex-icon.png" alt="LaTex" />
+            <img src="images/laTex-icon.png" alt="LaTex icon" />
             <p>LaTex</p>
           </div>
           <div class="skill">
-            <img src="images/cryptography-icon.png" alt="Cryptography" />
+            <img src="images/cryptography-icon.png" alt="Cryptography icon" />
             <p>Cryptanalysis & cipher techniques</p>
           </div>
         </div>
@@ -87,12 +96,30 @@
       <section id="projects">
         <h2>Projects</h2>
         <p>Check out some of my work:</p>
+
         <div class="project">
-          <h3>Project 1</h3>
-          <p>Landing page</p>
+          <h3>Landing Page</h3>
+          <p>A simple responsive landing page design.</p>
           <a
             href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/002/083/652/original/project.html?1707868369"
-            >View</a
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project">
+          <h3>Rock Paper Scissors Game</h3>
+          <p>Classic Rock Paper Scissors game with a sleek UI.</p>
+          <a href="https://kmabasa212.github.io/RPS-game/" target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project">
+          <h3>Tic Tac Toe</h3>
+          <p>A browser-based Tic Tac Toe game you can play against a friend.</p>
+          <a href="https://kmabasa212.github.io/Tic-Tac-Toe/" target="_blank"
+            >View Project</a
           >
         </div>
       </section>
@@ -105,8 +132,12 @@
         <p>Phone: <a href="tel:+27736162395">+27 73 616 2395</a></p>
 
         <div class="contact-icons">
-          <a href="https://github.com/kmabasa212">
-            <img src="images/github-icon.png" alt="GitHub" />
+          <a
+            href="https://github.com/kmabasa212"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="images/github-icon.png" alt="GitHub profile icon" />
           </a>
         </div>
       </section>
@@ -115,5 +146,7 @@
     <footer>
       <p>&copy; 2025 Khomsani Nolitha Gasa. All rights reserved.</p>
     </footer>
+
+    <button id="scrollTopBtn" title="Scroll to top">↑</button>
   </body>
 </html>
