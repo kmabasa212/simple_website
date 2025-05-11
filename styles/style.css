@@ -21,12 +21,19 @@ header {
   top: 0;
   left: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Ensures h1 stays centered even if nav is left-aligned */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header h1 {
   margin: 0;
   font-size: 24px;
   text-align: center;
+  width: 100%;
+  padding-top: 10px;
 }
 
 nav ul {
@@ -161,25 +168,26 @@ footer {
   font-size: 26px;
   color: white;
   cursor: pointer;
+  text-align: left;
+  margin: 10px 15px;
 }
 
 /* Responsive Navigation for Small Screens */
 @media (max-width: 600px) {
   .menu-toggle {
     display: block;
-    margin: 10px auto;
   }
 
   nav ul {
     display: none;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; /* Left-align items */
+    justify-content: flex-start;
     background-color: blue;
-    padding: 0;
+    padding: 10px 15px;
     margin: 0;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   nav ul.show {
@@ -196,7 +204,7 @@ footer {
     padding: 12px 0;
     font-size: 18px;
     margin: 0;
-    text-align: center;
+    text-align: left; /* Ensures link text is left-aligned */
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
