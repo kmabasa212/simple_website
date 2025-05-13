@@ -10,14 +10,24 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <h1>Welcome to My Portfolio</h1>
-
-      <!-- Mobile Menu Toggle Button -->
-      <button class="menu-toggle" id="menuToggle">☰</button>
-
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Toggle navigation menu"
+      >
+        ☰
+      </button>
       <nav>
         <ul class="nav-links" id="navLinks">
           <li><a href="#about">About Me</a></li>
@@ -34,8 +44,8 @@
       <section id="about">
         <h2>About Me</h2>
         <img
-          src="images/profilePhoto.jpg"
-          alt="Khomsani Nolitha Gasa"
+          src="images/Khomisani.gasa.jpg"
+          alt="Khomsani Nolitha Gasa profile"
           class="profile-photo"
         />
         <h3>Khomisani Nolitha Gasa</h3>
@@ -69,11 +79,8 @@
         <h2>Skills</h2>
         <div class="skills-grid">
           <div class="skill">
-            <img
-              src="images/team-icon.png"
-              alt="Communication & teamwork icon"
-            />
-            <p>Communication & teamwork</p>
+            <img src="images/team-icon.png" alt="Teamwork icon" />
+            <p>Communication & Teamwork</p>
           </div>
           <div class="skill">
             <img src="images/html-icon.png" alt="HTML icon" />
@@ -93,43 +100,50 @@
           </div>
           <div class="skill">
             <img src="images/cryptography-icon.png" alt="Cryptography icon" />
-            <p>Cryptanalysis & cipher techniques</p>
+            <p>Cryptanalysis & Cipher Techniques</p>
           </div>
         </div>
       </section>
 
       <section id="projects">
         <h2>Projects</h2>
-        <p>Check out some of my work:</p>
-
         <div class="project">
           <h3>Landing Page</h3>
           <p>A simple responsive landing page design.</p>
           <a
             href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/002/083/652/original/project.html?1707868369"
             target="_blank"
-            >View Project</a
+            rel="noopener noreferrer"
           >
+            View Project
+          </a>
         </div>
 
         <div class="project">
           <h3>Rock Paper Scissors Game</h3>
           <p>Classic Rock Paper Scissors game with a sleek UI.</p>
-          <a href="https://kmabasa212.github.io/RPS-game/" target="_blank"
-            >View Project</a
+          <a
+            href="https://kmabasa212.github.io/RPS-game/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            View Project
+          </a>
         </div>
 
         <div class="project">
           <h3>Tic Tac Toe</h3>
-          <p>A browser-based Tic Tac Toe game you can play against a friend.</p>
-          <a href="https://kmabasa212.github.io/Tic-Tac-Toe/" target="_blank"
-            >View Project</a
+          <p>Play against a friend in a browser-based Tic Tac Toe game.</p>
+          <a
+            href="https://kmabasa212.github.io/Tic-Tac-Toe/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            View Project
+          </a>
         </div>
       </section>
 
-      <!-- CV Section -->
       <section id="cv">
         <h2>My CV</h2>
         <p>
@@ -137,8 +151,9 @@
             href="documents/CvApril2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            >Download My CV (PDF)</a
           >
+            Download My CV (PDF)
+          </a>
         </p>
       </section>
 
@@ -148,14 +163,18 @@
           Email: <a href="mailto:kmabasa212@gmail.com">kmabasa212@gmail.com</a>
         </p>
         <p>Phone: <a href="tel:+27736162395">+27 73 616 2395</a></p>
-
         <div class="contact-icons">
           <a
             href="https://github.com/kmabasa212"
             target="_blank"
             rel="noopener"
+            class="icon-link"
           >
-            <img src="images/github-icon.png" alt="GitHub profile icon" />
+            <i
+              class="fab fa-github fa-2x"
+              aria-hidden="true"
+              title="GitHub Profile"
+            ></i>
           </a>
         </div>
       </section>

@@ -208,3 +208,12 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
+/* Font Awesome GitHub icon styling */
+.icon-link i {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.icon-link i:hover {
+  color: #000;
+}
