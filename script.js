@@ -24,3 +24,18 @@ const navLinks = document.getElementById("navLinks");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
+// Existing toggle code for menu button
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+// Close mobile menu when a nav link is clicked (mobile only)
+const navItems = navLinks.querySelectorAll("a");
+
+navItems.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (navLinks.classList.contains("show")) {
+      navLinks.classList.remove("show");
+    }
+  });
+});
