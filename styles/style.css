@@ -1,6 +1,7 @@
 /* Global Reset and Base Styles */
 html {
   scroll-behavior: smooth;
+  scroll-padding: 80px;
 }
 
 body {
